@@ -8,6 +8,17 @@ The goal of this project is to construct a fully convolutional neural network ba
 
 the architecture is based on the pre-trained VGG-16 network was converted to a fully convolutional network by converting the final fully connected layer to a 1x1 convolution and setting the depth equal to the number of desired classes, Each convolution and transpose convolution layer includes a kernel initializer and regularizer.
 
+In Line #48 the layers function shows the contruct of the model
+
+def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
+    """
+    Create the layers for a fully convolutional network.  Build skip-layers using the vgg layers.
+    :param vgg_layer7_out: TF Tensor for VGG Layer 3 output
+    :param vgg_layer4_out: TF Tensor for VGG Layer 4 output
+    :param vgg_layer3_out: TF Tensor for VGG Layer 7 output
+    :param num_classes: Number of classes to classify
+    :return: The Tensor for the last layer of output
+
 ### Optimizer
 
 for the optimize function the loss funtion is used with cross entropy, the optimizer is AdamOptimizer.
