@@ -29,10 +29,10 @@ The hyperparameters used for training are:
 Below shows several training results of the sample images from the output network
 
 ![sample_1](./runs/1521460141.2050824/um_000001.png)
-![sample_2](./runs/1521460141.2050824/um_000085.png)
-![sample_3](./runs/1521460141.2050824/um_000093.png)
-![sample_4](./runs/1521460141.2050824/um_000094.png)
-![sample_5](./runs/1521460141.2050824/um_000099.png)
+![sample_2](./runs/1521460141.2050824/umm_000085.png)
+![sample_3](./runs/1521460141.2050824/uu_000093.png)
+![sample_4](./runs/1521460141.2050824/uu_000094.png)
+![sample_5](./runs/1521460141.2050824/uu_000099.png)
 
 
 the overall performance is good based on the trainning parameter. as is shown in the sample image. 
