@@ -12,6 +12,14 @@ the architecture is based on the pre-trained VGG-16 network was converted to a f
 
 for the optimize function the loss funtion is used with cross entropy, the optimizer is AdamOptimizer.
 
+    # Define cost function using cross entropy
+    
+    cross_entropy_loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=logits, labels=correct_label))
+    
+    # Set up optimizer
+    
+    optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate)
+
 ### Training
 
 The hyperparameters used for training are:
